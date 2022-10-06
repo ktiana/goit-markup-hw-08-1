@@ -1,0 +1,120 @@
+.clients__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+  }
+}
+
+.clients__item {
+  width: 270px;
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+
+.clients__logo {
+  fill: var(--grey);
+  transition: 250ms fill var(--cubic);
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+  color: var(--grey);
+  transition: 250ms border-color var(--cubic);
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+          .clients__logo{
+            fill: var(--accent-color);
+      }
+      }
+      }
+
+
+// .clients__section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+
+// .clients__link{
+//   &:focus,
+//   &:hover {
+//     .clients__logo{
+//       fill: var(--accent-color);
+//     }
+// }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .clients__list {
+//   display: flex;
+//   justify-content: center;
+//   gap: 30px;
+// }
+// .clients__logo {
+//   fill: var(--grey);
+//   transition: 250ms fill var(--cubic);
+// }
+// .clients__link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 170px;
+//   height: 92px;
+//   border: 1px solid var(--grey);
+//   border-radius: 4px;
+//   color: var(--grey);
+//   transition: 250ms border-color var(--cubic);
+//     &:hover,
+//     &:focus {
+//       border: 1px solid var(--accent-color);
+//     }
+// }
+// .clients__link{
+//   &:focus,
+//   &:hover {
+//     .clients__logo{
+//       fill: var(--accent-color);
+//     }
+// }
+// }
+
+// .clients__link:hover,
+// .clients__link:focus {
+//   border: 1px solid var(--accent-color);
+// }
+
+// .clients__link:hover .clients__logo,
+// .clients__link:focus .clients__logo {
+//   fill: var(--accent-color);
+// }

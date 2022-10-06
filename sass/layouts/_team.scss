@@ -1,0 +1,134 @@
+.team__section {
+    background-color: var(--secondary-background-color);
+  }
+
+.team__title{
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+  .team__list {
+    display: flex;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+    // margin-top: 16px;
+  }
+
+  .team__item {
+    background: var(--white-text-color);
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
+
+  .team__desc {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  .team__name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--primary-text-color);
+  }
+  .team__job {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--secondary-text-color);
+  }
+
+  .social__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .social__item{
+    background: var(--white-text-color);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  .social__icon {
+    fill: grey;
+    transition: 250ms fill color var(--cubic);
+    
+  }
+  .social__link {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  
+    background-color: transparent;
+    background-color: var(--white-text-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 50%;
+    border: none;
+    fill: gray;
+    
+    width: 44px;
+    height: 44px;
+    margin: 0;
+  
+    transition: 250ms background-color var(--cubic);
+      &:hover,
+      &:focus {
+      background-color: var(--accent-color);
+      color: var(--white-text-color);
+      .social__icon{
+        fill: var(--white-text-color);
+      }
+    }
+  }
+
+      
+
+  // .social__link {
+  //   &:hover,
+  //   &:focus{
+  //     .social__icon{
+  //       fill: var(--white-text-color);
+  //     }
+  //   }
+  // }
+
+
+      
+  // .social__link:hover,
+  // .social__link:focus {
+  //   background-color: var(--accent-color);
+  //   color: var(--white-text-color);
+  // }
+//  .social__link:hover .social__icon,
+//   .social__link:focus .social__icon {
+//   fill: var(--white-text-color);
+//   }
+  
+
+// .social__icon:hover,
+// .social__icon:focus {
+//     fill: var(--white-text-color);
+//   }
+

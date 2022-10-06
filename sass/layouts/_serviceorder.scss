@@ -1,0 +1,229 @@
+
+.serviceorder {
+  padding: 40px;
+}
+.serviceorder-title {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.serviceorder-group {
+  margin-top: 28px;
+  position: relative;
+}
+.serviceorder-lable {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+.checkbox-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+.serviceorder-group-comment {
+  margin-top: 10px;
+}
+.serviceorder-lable-comment {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+.serviceorder-form-input {
+  margin-top: 4px;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+  cursor: pointer;
+  padding-left: 42px;
+  transition: 250ms border var(--cubic);
+  color: var(--primary-text-color);
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+      border: 1px solid var(--accent-color);
+    }
+}
+.serviceorder-form-input .placeholder {
+  padding: 20px;
+}
+
+// .serviceorder-form-input:hover,
+// .serviceorder-form-input:focus {
+//   fill: var(--accent-color);
+//   border: 1px solid var(--accent-color);
+// }
+// .serviceorder-field:hover,
+// .serviceorder-field:focus {
+//   color: var(--accent-color);
+// }
+
+.serviceorder-form-comment {
+  margin-top: 4px;
+  padding-top: 12px;
+  padding-left: 16px;
+
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+  transition: 250ms border var(--cubic);
+  resize: none;
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+      fill: var(--accent-color);
+    }
+}
+
+// .serviceorder-form-comment:hover, 
+// .serviceorder-form-comment:focus {
+//  fill: var(--accent-color);
+//   border: 1px solid var(--accent-color);
+// }
+
+ .serviceorder-form-input:hover + .serviceorder-field-icon,
+.serviceorder-form-input:focus  + .serviceorder-field-icon {
+
+ fill: var(--accent-color);
+ } 
+
+.serviceorder-form-input {
+  &:hover,
+  &:focus{
+    .serviceorder-field-icon{
+      fill: var(--accent-color);
+    }
+  }
+}
+
+
+
+// .serviceorder-form-comment:hover,
+// .serviceorder-form-comment:focus  {
+//   border: 1px solid var(--accent-color);
+// }
+
+.serviceorder-field-comment {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-text-color);
+}
+
+.serviceorder-group-checkbox {
+  margin-top: 20px;
+}
+
+.serviceorder-field-icon {
+  position: absolute;
+
+  left: 14px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: currentColor;
+  transition: 250ms fill var(--cubic);
+}
+
+
+.serviceorder-button {
+  margin: auto;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  width: 200px;
+  height: 50px;
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  border: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  }
+}
+
+// .serviceorder-button:hover,
+// .serviceorder-button:focus {
+//   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+// }
+
+// .form-agreement:hover {
+//   fill: var(--accent-color);
+// }
+
+.form-agreement {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+.agreement-icon-unchecked {
+  fill: var(--primary-text-color);
+  transition: 250ms fill var(--cubic);
+}
+.agreement-icon-checked {
+  opacity: 0;
+  transition: 250ms opacity var(--cubic);
+  fill: var(--accent-color);
+}
+
+.agreement-checkbox:checked 
++ .agreement-icon 
+.agreement-icon-checked {
+ opacity: 1;
+}
+.agreement-checkox:checked 
++ .agreement-icon 
+.agreement-icon-unchecked {
+ opacity: 0;
+ }
+
+.agreement-text {
+  display: flex;
+  text-align: center;
+  gap: 7px;
+  line-height: 1.71px;
+  color: var(--secondary-text-color);
+
+  user-select: none;
+}
+
+.agreement-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.checkbox {
+  margin-top: 20px;
+}

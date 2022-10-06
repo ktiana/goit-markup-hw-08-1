@@ -1,0 +1,122 @@
+.features__list {
+  gap: 30px;
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    display: flex;
+  }
+}
+
+.feature__title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.feature__description {
+  margin-top: 10px;
+  line-height: 1.7;
+  color: var(--secondary-text-color);
+}
+
+.feature__item {
+  width: 100%;
+  &:before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-size: 65px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--secondary-background-color);
+  }
+}
+
+.feature__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.feature__item.icon-attention {
+  &:before {
+    background-image: url(../images/antenna-min.svg);
+  }
+}
+.feature__item.icon-punctality {
+  &:before {
+    background-image: url(../images/clock-picture-min.svg);
+  }
+}
+.feature__item.icon-planning {
+  &:before {
+    background-image: url(../images/planning-min.svg);
+  }
+}
+.feature__item.icon-modern {
+  &:before {
+    background-image: url(../images/astronaut-min.svg);
+  }
+}
+
+// .features__section {
+//   padding-top: 94px;
+//   padding-bottom: 0px;
+// }
+// // .features__list
+// // {
+// //   display: flex;
+// //   gap: 30px;
+// // }
+// .feature__title {
+//   font-weight: 700;
+//   line-height: 1.13;
+//   text-transform: uppercase;
+//   color: var(--primary-text-color);
+// }
+// .feature__description {
+//   margin-top: 10px;
+//   line-height: 1.7;
+//   color: var(--secondary-text-color);
+// }
+// .feature__item {
+//   &:before{
+//   display: block;
+//   content: "";
+//   height: 120px;
+//   margin-bottom: 30px;
+
+//   background-size: 65px 70px;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-color: var(--secondary-background-color);
+// }
+// }
+
+// .feature__item.icon-attention{
+//   &:before {
+//   background-image: url(../images/antenna-min.svg);
+// }
+// }
+// .feature__item.icon-punctality{
+//   &:before {
+//   background-image: url(../images/clock-picture-min.svg);
+// }
+// }
+// .feature__item.icon-planning{
+//   &:before {
+//   background-image: url(../images/planning-min.svg);
+// }
+// }
+// .feature__item.icon-modern{
+//   &:before {
+//   background-image: url(../images/astronaut-min.svg);
+// }
+// }
